@@ -43,13 +43,38 @@
 
       header {
         height: 100vh;
+        position: relative;
+
+        background-image: linear-gradient(
+            rgba(34, 34, 34, 0.6),
+            rgba(34, 34, 34, 0.6)
+          ),
+          url(hero.jpg);
+        background-size: cover;
+
+        color: #fff;
       }
 
       nav {
         font-size: 20px;
         font-weight: 700;
+
+        padding-top: 32px;
         display: flex;
         justify-content: space-between;
+      }
+
+      .header-container {
+        width: 1200px;
+
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .header-container-inner {
+        width: 50%;
       }
 
       nav div {
@@ -58,10 +83,11 @@
       h1 {
         font-size: 52px;
         margin-bottom: 32px;
+        line-height: 1.05;
       }
 
       p {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 1.6;
         margin-bottom: 48px;
       }
@@ -83,11 +109,12 @@
 
       h2 {
         font-size: 44px;
-        margin-bottom: 4px;
+        margin-bottom: 48px;
       }
 
       section {
         padding: 96px 0;
+        background-color: #f7f7f7;
       }
     </style>
   </head>
@@ -97,14 +124,16 @@
         <div>LOGO</div>
         <div>NAVIGATION</div>
       </nav>
-
-      <div class="container">
-        <h1>A healty meal delivered to your door, every single day</h1>
-        <p>
-          The smart 365-days-per-year food subscription that will make you eat
-          healty algain. Tailored to your personal tastes and nutritional needs
-        </p>
-        <a href="#">Start eating well</a>
+      <div class="header-container">
+        <div class="header-container-inner">
+          <h1>A healty meal delivered to your door, every single day</h1>
+          <p>
+            The smart 365-days-per-year food subscription that will make you eat
+            healty algain. Tailored to your personal tastes and nutritional
+            needs
+          </p>
+          <a href="#">Start eating well</a>
+        </div>
       </div>
     </header>
 
@@ -115,7 +144,10 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem
           animi, minima architecto atque repudiandae accusantium nulla quisquam
           doloribus tenetur, magnam adipisci fugit neque! Ex earum nisi at, sed
-          velit dolores?
+          velit dolores? Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Voluptatem minus harum molestias alias impedit nemo assumenda
+          eos iste, laboriosam laudantium porro quisquam ut tempore nisi
+          doloremque similique temporibus earum quasi?
         </p>
       </div>
     </section>
