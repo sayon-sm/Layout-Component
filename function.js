@@ -1,10 +1,10 @@
 const ele = document.getElementsByClassName('item');
-console.log(ele.length);
+console.log(ele);
 // Array.from(ele).forEach((element) => {
 //   console.log('hi');
 // });
 for (const e of ele) {
   e.addEventListener('click', () => {
-    alert('hi');
+    e.classList.toggle('open');
   });
 }
