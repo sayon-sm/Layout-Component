@@ -1,0 +1,27 @@
+const link = document.getElementsByClassName('page-link');
+const btnLeft = document.getElementById('prev');
+const btnRight = document.getElementById('next');
+
+// console.log(link, btnLeft, btnRight, link[7]);
+
+btnLeft.addEventListener('click', () => {
+  for (i = 1; i < link.length; i++) {
+    console.log(i);
+    if (link[i].classList.contains('curr')) {
+      link[i - 1].classList.add('curr');
+      link[i].classList.remove('curr');
+      break;
+    }
+  }
+});
+
+btnRight.addEventListener('click', () => {
+  for (i = 0; i < link.length - 1; i++) {
+    console.log(i);
+    if (link[i].classList.contains('curr')) {
+      link[i + 1].classList.add('curr');
+      link[i].classList.remove('curr');
+      break;
+    }
+  }
+});
