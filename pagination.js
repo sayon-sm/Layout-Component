@@ -9,6 +9,7 @@ btnLeft.addEventListener('click', () => {
     console.log(i);
     if (link[i].classList.contains('curr')) {
       link[i - 1].classList.add('curr');
+      window.open(link[i - 1].href, '_self');
       link[i].classList.remove('curr');
       break;
     }
@@ -20,6 +21,7 @@ btnRight.addEventListener('click', () => {
     console.log(i);
     if (link[i].classList.contains('curr')) {
       link[i + 1].classList.add('curr');
+      window.open(link[i + 1].href, '_self');
       link[i].classList.remove('curr');
       break;
     }
