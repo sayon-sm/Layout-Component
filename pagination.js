@@ -2,8 +2,6 @@ const link = document.getElementsByClassName('page-link');
 const btnLeft = document.getElementById('prev');
 const btnRight = document.getElementById('next');
 
-// console.log(link, btnLeft, btnRight, link[7]);
-
 btnLeft.addEventListener('click', () => {
   for (i = 1; i < link.length; i++) {
     if (link[i].classList.contains('curr')) {
